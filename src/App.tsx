@@ -3,8 +3,8 @@ import AIPoweredImg from "../src/assets/AIPowered.svg";
 import IntegratedHealth from "../src/assets/IntegratedHealth.svg";
 import './App.css';
 // import { Link } from "react-router-dom";
-import Navigation from './components/Navigation';
 import TwitterImg from "./assets/twitter.svg";
+import Navigation from './components/Navigation';
 
 function App() {
 
@@ -33,6 +33,7 @@ const HeroSection: React.FC = () => {
         HealthCare with AI
         <br />
         and Smart Scheduling</p>
+        <a href="https://project-curova.netlify.app/login" className="bg-[#033856] text-white font-bold p-5 py-3 mt-3 block w-max rounded">Get Started</a>
     </div>
   )
 }
@@ -73,7 +74,6 @@ const AboutUsSection: React.FC = () => {
     </div>
   )
 }
-
 
 const ServicesSection: React.FC = () => {
   return (
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
         <a href={"#"} className="font-bold underline">Privacy</a>
         <a href={"#"} className="font-bold underline">Terms and Condition</a>
         <a href={"#"} className="font-bold underline">Cookies</a>
-        <a href={"#"} className="font-bold underline">Work for us</a>
+        <a href={"#"} className="font-bold underline">Partner with us</a>
       </div>
     </div>
   )

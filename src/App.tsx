@@ -100,7 +100,7 @@ const ServicesSection: React.FC = () => {
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-[#053856] text-white px-5 py-3 flex flex-col gap-y-5">
+    <div className="bg-[#053856] text-white px-5 py-10 flex flex-col gap-y-10">
       {/* Right Footer */}
       <div>
         <h4 className="text-3xl font-bold">Get In Touch</h4>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Left Footer */}
-      <div className="flex flex-col text-sm">
+      <div className="flex flex-col gap-y-1 text-sm">
         <a href={"#"} className="font-bold underline">Our Polices</a>
         <a href={"#"} className="font-bold underline">Privacy</a>
         <a href={"#"} className="font-bold underline">Terms and Condition</a>

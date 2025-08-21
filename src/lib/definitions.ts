@@ -15,6 +15,7 @@ export const NAVIGATION = {
   PRESCRIPTIONS: `/prescriptions`,
   RECORDS: `/records`,
   BILLING: `/bill`,
+  MISSION_VISION: `/goals`,
 } as const;
 
 

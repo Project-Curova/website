@@ -4,6 +4,7 @@ import { NAVIGATION } from "./lib/definitions";
 import { ContactUsPage, HomePage, PrivacyPolicyPage, TermsAndConditionPage } from "./pages";
 import AboutUs from "./pages/AboutUs";
 import ErrorPage from "./pages/error/ErrorPage";
+import MissionVisionPage from "./pages/MissionVisionPage";
 
  const routes: RouteObject[] = [
     {
@@ -33,6 +34,10 @@ import ErrorPage from "./pages/error/ErrorPage";
             {
               path: `${NAVIGATION.CONTACT_US}`,
               element: <ContactUsPage />
+            },
+            {
+              path: `${NAVIGATION.MISSION_VISION}`,
+              element: <MissionVisionPage />
             },
           ]
         },

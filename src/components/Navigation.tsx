@@ -19,6 +19,13 @@ const items: MenuProps['items'] = [
     label: 'Services',
     extra: '⌘P',
   },
+    {
+    type: 'divider',
+  },
+  {
+    key: '3',
+    label: <><Link to={NAVIGATION.MISSION_VISION}>Mission / Vision</Link></>,
+  },
 ];
 
 

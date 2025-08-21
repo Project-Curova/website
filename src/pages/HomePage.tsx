@@ -4,6 +4,8 @@ import AIPoweredImg from "../assets/AIPowered.svg";
 import IntegratedHealth from "../assets/IntegratedHealth.svg";
 import '../App.css';
 import TwitterImg from "../assets/twitter.svg";
+import { Link } from "react-router-dom";
+import { NAVIGATION } from "../lib/definitions";
 
 const HomePage = () => {
   return (
@@ -110,9 +112,10 @@ const Footer: React.FC = () => {
 
       {/* Left Footer */}
       <div className="flex flex-col gap-y-1 text-sm">
+
         <a href={"#"} className="font-bold underline">Our Polices</a>
-        <a href={"#"} className="font-bold underline">Privacy</a>
-        <a href={"#"} className="font-bold underline">Terms and Condition</a>
+        <Link to={NAVIGATION.PRIVACY} className="font-bold underline">Privacy</Link>
+        <Link to={NAVIGATION.TERMS} className="font-bold underline">Terms and Condition</Link>
         <a href={"#"} className="font-bold underline">Cookies</a>
         <a href={"#"} className="font-bold underline">Partner with us</a>
       </div>

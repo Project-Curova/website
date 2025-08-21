@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import { NavigationContextProvider } from "../contexts/NavigationContext";
-import { MAX_DESKTOP_WIDTH } from "../lib/definitions";
 
 const WebLayout: React.FC = () => {
 
@@ -11,7 +10,7 @@ const WebLayout: React.FC = () => {
             {/* <NavigationBar /> */}
 
             <main
-                style={{width: `${MAX_DESKTOP_WIDTH}px`, margin: "auto"}}
+                // style={{width: `${MAX_DESKTOP_WIDTH}px`, margin: "auto"}}
             >
                 <div>
                     <Outlet />

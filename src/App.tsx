@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider, type RouteObject } from "react-router-dom";
 import WebLayout from "./layouts/WebLayout";
 import { NAVIGATION } from "./lib/definitions";
-import { HomePage } from "./pages";
+import { ContactUsPage, HomePage, PrivacyPolicyPage, TermsAndConditionPage } from "./pages";
+import AboutUs from "./pages/AboutUs";
 import ErrorPage from "./pages/error/ErrorPage";
 
  const routes: RouteObject[] = [
@@ -18,21 +19,23 @@ import ErrorPage from "./pages/error/ErrorPage";
               element: <HomePage />
             },
             {
-              path: `${NAVIGATION.APPOINTMENTS}`,
-              // element: <AppointmentPage />
+              path: `${NAVIGATION.ABOUT_US}`,
+              element: <AboutUs />
+            },
+            {
+              path: `${NAVIGATION.PRIVACY}`,
+              element: <PrivacyPolicyPage />
+            },
+            {
+              path: `${NAVIGATION.TERMS}`,
+              element: <TermsAndConditionPage />
+            },
+            {
+              path: `${NAVIGATION.CONTACT_US}`,
+              element: <ContactUsPage />
             },
           ]
         },
-        
-        // // Public routes
-        // {
-        //   path: NAVIGATION.LOGIN,
-        //   element: <LoginPage />
-        // },
-        // {
-        //   path: NAVIGATION.SIGNUP,
-        //   element: <SignUpPage />
-        // },
       ]
     },
   ];

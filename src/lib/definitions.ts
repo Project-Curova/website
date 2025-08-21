@@ -10,20 +10,11 @@ export const NAVIGATION = {
   TERMS: "/terms",
   PRIVACY: "/privacy",
   CONTACT_US: "/contact",
-  // VERIFY_EMAIL: `/login/verify-email`,
-  // VERIFY_OTP: `/login/verify`,
-  // VALIDATE_OTP: `/login/validate`,
   FORGOT_PASSWORD: `/login/authgen`,
   APPOINTMENTS: `/appointments`,
   PRESCRIPTIONS: `/prescriptions`,
   RECORDS: `/records`,
   BILLING: `/bill`,
-  // PASSWORD_RESET: `/login/reset`,
-  // LOGIN_PROFILE_UPDATE: `/login/update`,
-  // LOGOUT: "/logout",
-  // AUTHGEN: `/login/authgen`,
-  // AUTHVAL: `/login/authval`,
-  // PIN_SETUP: `/login/pin`
 } as const;
 
 

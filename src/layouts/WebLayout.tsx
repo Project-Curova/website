@@ -6,9 +6,6 @@ const WebLayout: React.FC = () => {
     return (
         <NavigationContextProvider>
 
-            {/* Navigation */}
-            {/* <NavigationBar /> */}
-
             <main
                 // style={{width: `${MAX_DESKTOP_WIDTH}px`, margin: "auto"}}
             >

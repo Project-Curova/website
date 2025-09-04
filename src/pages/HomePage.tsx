@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
+import '../App.css';
 import AIDrivenImg from "../assets/AIDriven.svg";
-import Navigation from "../components/Navigation";
 import AIPoweredImg from "../assets/AIPowered.svg";
 import IntegratedHealth from "../assets/IntegratedHealth.svg";
-import '../App.css';
 import TwitterImg from "../assets/twitter.svg";
-import { Link } from "react-router-dom";
+import Navigation from "../components/Navigation";
 import { NAVIGATION } from "../lib/definitions";
 
 const HomePage = () => {
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-col gap-y-1 text-sm">
 
         <a href={"#"} className="font-bold underline">Our Polices</a>
-        <Link to={NAVIGATION.PRIVACY} className="font-bold underline">Privacy</Link>
+        <Link to={NAVIGATION.PRIVACY} className="font-bold underline">Privacy Policy</Link>
         <Link to={NAVIGATION.TERMS} className="font-bold underline">Terms and Condition</Link>
         <a href={"#"} className="font-bold underline">Cookies</a>
         <a href={"#"} className="font-bold underline">Partner with us</a>

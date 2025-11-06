@@ -117,7 +117,7 @@ const TermsAndConditions: React.FC = () => {
                         If you have questions or requests regarding this Privacy Policy, please contact us at:
                     </p>
                     <ul className="mt-3 flex flex-col gap-y-2 list-disc pl-5">
-                        <li><strong>Email:</strong> [Insert email address]</li>
+                        <li><strong>Email:</strong> <a className="text-blue-600 font-medium" href="mailto:projectcurova.team@gmail.com">projectcurova.team@gmail.com</a></li>
                         <li><strong>Phone:</strong> [Insert phone number]</li>
                         <li><strong>Postal Address:</strong> [Insert postal address]</li>
                     </ul>

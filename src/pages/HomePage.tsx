@@ -102,7 +102,7 @@ const ServicesSection: React.FC = () => {
       </div>
 
       <div>
-        <div className='bg-blue-950 h-[1px] w-full my-[3vh] rounded-2xl'></div>
+        <div className='bg-blue-950 h-[1px] w-full my-[7vh] rounded-2xl'></div>
         <div className="text-[#033856] sm:flex flex-row-reverse items-start justify-center gap-x-[5vw] mb-[5vh]">
           <img src={AIImageScreen} alt="AI_Image" className="w-[60%] max-w-[300px] rounded self-" />
           <div className="mt-5 sm:m-0 sm:w-[50%]">

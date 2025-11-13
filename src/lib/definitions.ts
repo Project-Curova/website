@@ -1,4 +1,5 @@
 export const MAX_DESKTOP_WIDTH =  900;
+export const PAGE_PADDING_INLINE = 20;
 
 export const NAVIGATION = {
   HOME: "/",

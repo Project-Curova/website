@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import '../App.css';
+import AIImageScreen from "../assets/AI_Image_Download.svg";
 import AIDrivenImg from "../assets/AIDriven.svg";
 import AIPoweredImg from "../assets/AIPowered.svg";
 import IntegratedHealth from "../assets/IntegratedHealth.svg";
@@ -9,7 +10,7 @@ import { NAVIGATION } from "../lib/definitions";
 
 const HomePage = () => {
   return (
-   <div className='h-screen overflow-y-auto bg-herowhite pt-3'>
+    <div className='h-screen overflow-y-auto bg-herowhite pt-3'>
       <div className=''>
         <div className="px-5">
           <Navigation />
@@ -29,11 +30,13 @@ const HeroSection: React.FC = () => {
   return (
     <div className='mt-5 sm:flex sm:flex-row-reverse sm:gap-x-5'>
       <div id='hero' className='h-[50vw] sm:h-[200px] sm:w-[60%] max-h-[400px] px-12 w-full max-w-[1000px] max-h-1000px rounded-xl'></div>
-      <p className='font-medium text-2xl sm:text-3xl font-sans text-pry leading-relaxed mt-5'>Revolutionizing
-        HealthCare with AI
-        <br />
-        and Smart Scheduling</p>
+      <div>
+        <p className='font-medium text-2xl sm:text-3xl font-sans text-pry leading-relaxed mt-5'>Revolutionizing
+          HealthCare with AI
+          <br />
+          and Smart Scheduling</p>
         <a href="https://project-curova.netlify.app/login" className="bg-[#033856] text-white font-bold p-5 py-3 mt-3 block w-max rounded">Get Started</a>
+      </div>
     </div>
   )
 }
@@ -77,21 +80,40 @@ const AboutUsSection: React.FC = () => {
 
 const ServicesSection: React.FC = () => {
   return (
-    <div className='bg-[#1E4D68] text-white rounded-t-sm px-5 py-3 mt-5'>
-      <h4 className='font-bold text-2xl'>Services</h4>
+    <div className='bgg-[#1E4D68] text-white rounded-t-sm px-5 py-3 mt-5'>
+      <h4 className='font-bold text-2xl text-center text-[#033856]'>Our Services</h4>
 
-      <div className='mt-3 flex flex-col gap-y-10 items-center py-7'>
-        <div className="flex flex-col items-center gap-y-2">
+      <div className='mt-3 flex flex-col md:flex-row gap-x-10 gap-y-10 items-center py-7'>
+        <div className="flex flex-col items-center gap-y-2 text-[#033856]">
           <img src={AIPoweredImg} className="w-[50%] max-w-[200px]" alt="AI Powered" />
-          <p className="text-sm">AI Powered Scheduling</p>
+          <p className="font-medium">AI Powered Scheduling</p>
+          <p className="max-w-sm text-sm">Curova’s intelligent scheduling engine leverages machine learning to automatically recommend optimal appointment times based on user preferences, staff availability, and workload balance.</p>
         </div>
-        <div className="flex flex-col items-center gap-y-2">
+        <div className="flex flex-col items-center gap-y-2 text-[#033856]">
           <img src={AIDrivenImg} alt="AI Driven Management" className="w-[50%] max-w-[200px]" />
-          <p className="text-sm">AI Driven Management</p>
+          <p className="font-medium">AI Driven Management</p>
+          <p className="max-w-sm text-sm">Curova uses predictive analytics to monitor and manage inventory levels in real time. By analyzing usage trends and demand patterns, the system forecasts supply needs, prevents stockouts, and automates reordering.</p>
         </div>
-        <div className="flex flex-col items-center gap-y-2">
+        <div className="flex flex-col items-center gap-y-2 text-[#033856]">
           <img src={IntegratedHealth} alt="AI Powered" className="w-[50%] max-w-[200px]" />
-          <p className="text-sm">Integrated Health Records</p>
+          <p className="font-medium">Integrated Health Records</p>
+          <p className="max-w-sm text-sm">Curova provides a unified, blockchain-secured platform for managing electronic health records (EHRs). The system ensures interoperability across departments and organizations while maintaining strict compliance with HIPAA and GDPR standards.</p>
+        </div>
+      </div>
+
+      <div>
+        <div className='bg-blue-950 h-[1px] w-full my-[3vh] rounded-2xl'></div>
+        <div className="text-[#033856] sm:flex flex-row-reverse items-start justify-center gap-x-[5vw] mb-[5vh]">
+          <img src={AIImageScreen} alt="AI_Image" className="w-[60%] max-w-[300px] rounded self-" />
+          <div className="mt-5 sm:m-0 sm:w-[50%]">
+            <p>At Curova, we are redefining healthcare through intelligent innovation and technological excellence. Our mission is to empower healthcare providers and patients with a unified digital ecosystem that enhances care delivery, optimizes operations, and ensures data security.
+            </p>
+            <br />
+
+            <p>
+              Our commitment to excellence, innovation, and patient-centric design drives everything we do.
+            </p>
+          </div>
         </div>
       </div>
     </div>
